@@ -1,2 +1,2 @@
 var name = 'marcelo'
-console.log(name);
+console.log(name)
