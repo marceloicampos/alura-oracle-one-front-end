@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+        <meta property="og:title" content="Alura Front End Oracle ONE" />
+        <meta property="og:type" content="website" />
+        <!-- <meta property="og:image" content="#https://image" /> -->
+        <meta property="og:url" content="https://marceloicampos.github.io/challenge-oracle-front-end/index.html" />
+        <meta property="og:description" content="website" />
+        <meta name="keywords" content="HTML5, CSS3, JavaScript, Oracle, Oracle ONE, Alura, Front End" />
+        <meta name="author" content="Marcelo Ildefonso Campos" />
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/styles.css" />
-        <script src="./js/script.js"></script>
         <title>Barbearia Alura</title>
     </head>
     <body>
-        <h2>Sobre a Barbearia da <a href="https://www.alura.com.br/" target="_blank">Alura</a></h2>
-        <p>
-            Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em
-            2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.
-        </p>
-        <p>
-            <em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em>
-        </p>
-        <p>
-            Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo
-            qualidade e satisfação dos nossos clientes.
-        </p>
+        <header>
+            <h1 class="titulo-principal">Barbearia Alura</h1>
+            <img id="banner" src="./images/banner.jpg" alt="banner site" />
+        </header>
+        <main>
+            <section class="principal">
+                <h2 class="titulos">Sobre a Barbearia da <a href="https://www.alura.com.br/" target="_blank">Alura</a></h2>
+                <h2 class="titulos">Nossos <a href="./produtos.html">Produtos</a></h2>
+                <p>
+                    Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada
+                    em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.
+                </p>
+                <p class="missao">
+                    <em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em>
+                </p>
+                <p>
+                    Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade,
+                    garantindo qualidade e satisfação dos nossos clientes.
+                </p>
+            </section>
+            <section class="beneficios">
+                <h3 class="titulos">Benefícios</h3>
+                <ul>
+                    <li class="itens">Atendimento Cliente</li>
+                    <li class="itens">Espaço Diferenciado</li>
+                    <li class="itens">Localização Privilegiada</li>
+                    <li class="itens">Profissionais Qualificados</li>
+                </ul>
+                <img class="image-beneficios" src="./images/beneficios.jpg" alt="banner benefícios" />
+            </section>
+        </main>
+        <footer class="foot">
+            <p>ORACLE ONE Formação Front-end por <a href="https://marceloicampos.com/about" target="_blank">Marcelo Ildefonso Campos</a></p>
+            <p>
+                <a href="https://github.com/marceloicampos/alura-oracle-one-front-end/" target="_blank">Projeto no Git Hub</a>
+                | <a href="https://www.linkedin.com/in/marceloicampos/" target="_blank">Meu Linkedin</a>
+            </p>
+        </footer>
     </body>
-    <footer class="foot">
-        <p>ORACLE ONE Formação Front-end por <a href="https://marceloicampos.com/about" target="_blank">Marcelo Ildefonso Campos</a></p>
-        <p>
-            <a href="https://github.com/marceloicampos/alura-oracle-one-front-end/" target="_blank">Projeto no Git Hub</a>
-            | <a href="https://www.linkedin.com/in/marceloicampos/" target="_blank">Meu Linkedin</a>
-        </p>
-    </footer>
 </html>

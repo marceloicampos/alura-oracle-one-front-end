@@ -6,21 +6,31 @@
 
 body {
     font-family: 'Neue Helvetica', Arial, sans-serif;
-    font-size: 1.5em;
-    background-color: #000000;
-    color: #f5f5f5;
+    font-size: 1em;
+    color: #000;
+    padding: 0 0 96px 0;
 }
 
-h2 {
-    margin: 16px 0px 0px 16px;
+.titulo-principal {
+    padding-left: 20px;
 }
 
-p {
-    margin: 16px 0px 0px 16px;
+#banner {
+    width: 100%;
+}
+
+.principal {
+    background-color: #ccc;
+    padding: 30px;
+}
+
+.titulos {
+    margin: 16px;
+    text-align: center;
 }
 
 a {
-    color: #2222ff;
+    color: #0000ff;
     text-decoration: none;
 }
 
@@ -28,15 +38,52 @@ a:hover {
     text-decoration: underline;
 }
 
+p {
+    margin: 16px;
+    text-align: justify;
+}
+
+.missao {
+    font-size: 1.25em;
+}
+
+em strong {
+    color: #ff0000;
+}
+
+.beneficios {
+    background-color: #fff;
+    padding: 20px;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-left: 8px;
+    margin-right: 15%;
+}
+
+.itens {
+    font-style: italic;
+}
+
+.image-beneficios {
+    width: 50%;
+}
+
 .foot {
-    text-align: center;
-    color: #c74634;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: #3a3632;
     padding: 0.5em;
+}
+
+.foot p {
+    text-align: center;
+    color: #c74634;
 }
 
 .foot a {
