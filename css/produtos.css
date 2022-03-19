@@ -1,1 +1,114 @@
 @charset "UTF-8";
+
+header {
+    background-color: #bbbbbb;
+    padding: 20px 0px;
+}
+
+/* absolute - posso posicionar o elemento onde quiser, pois mudamos sua posição inicial*/
+/* relative - o elemento pode ser deslocado com o posicionamento, mas relativo ao seu ponto inicial */
+/* a posição da .menu-box é relative a todo o body e o nav é absolute ao body inteiro */
+
+.menu-box {
+    position: relative;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 8px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.375em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    max-width: 270px;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 10px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.produtos li:hover {
+    border-color: #c78c19;
+    font-size: 40px;
+}
+
+.produtos li:active {
+    border-color: #cccccc;
+}
+
+.produtos li:hover h2 {
+    font-size: 36px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+    /* margin: 0 0 10px 0; */
+}
+
+.produto-descricao {
+    font-size: 18px;
+    /* margin: 10px 0 0; */
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+footer {
+    text-align: center;
+    background-image: url('/images/bg.jpg');
+    padding: 40px 0;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
