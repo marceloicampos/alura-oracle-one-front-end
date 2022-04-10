@@ -1,2 +1,127 @@
 @charset "UTF-8";
 
+body {
+    font-family: 'Neue Helvetica', Arial, sans-serif;
+    color: #000000;
+}
+
+header {
+    background-color: #bbbbbb;
+    padding: 20px 0px;
+}
+
+/* absolute - posso posicionar o elemento onde quiser, pois mudamos sua posição inicial*/
+/* relative - o elemento pode ser deslocado com o posicionamento, mas relativo ao seu ponto inicial */
+/* a posição da .menu-box é relative a todo o body e o nav é absolute ao body inteiro */
+
+.menu-box {
+    position: relative;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 8px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.375em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+  width: 40%;
+  padding: 15px 0;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background-color: darkorange;
+  transform: scale(1.1);
+}
+
+table {
+  margin: 20px 40px;
+}
+
+thead {
+  background-color: #c8c8c8;
+  color: white;
+  font-weight: bold;
+}
+
+td, th {
+  border: 1px solid #000000;
+  padding: 8px 15px;
+  text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-image: url('/images/bg.jpg');
+    padding: 40px 0;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
