@@ -25,7 +25,7 @@ nav {
 
 nav li {
     display: inline;
-    margin: 0 0 0 8px;
+    margin: 0 8px 16px 8px;
 }
 
 nav a {
@@ -130,4 +130,10 @@ em strong {
 
 .foot a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 380px) {
+    nav li {
+        display: block;
+    }
 }
