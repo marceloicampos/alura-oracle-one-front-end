@@ -25,7 +25,7 @@ nav {
 
 nav li {
     display: inline;
-    margin: 0 8px 16px 8px;
+    margin: 0 0 16px 8px;
 }
 
 nav a {
@@ -41,11 +41,11 @@ nav a:hover {
     text-decoration: underline;
 }
 
-#banner {
+.banner-image {
     display: block;
     margin: 0 auto;
-    padding: 16px;
-    width: 50%;
+    padding: 8px;
+    width: 60%;
 }
 
 main {
@@ -53,46 +53,63 @@ main {
     margin: 0 auto;
 }
 
-.principal {
-    padding: 24px;
+.section-principal {
+    padding: 16px;
 }
 
-.titulos {
-    font-size: 24px;
+.section-principal-titulo {
+    font-size: 2em;
     font-weight: bold;
-    margin: 16px;
+    margin: 0 0 1em;
     text-align: center;
+    clear: left;
 }
 
-.titulos a {
+.util-image {
+    float: left;
+    width: 120px;
+    margin: 0 20px 20px 0;
+}
+
+.section-principal-titulo a {
     color: #0000ff;
     text-decoration: none;
 }
 
-.titulos a:hover {
+.section-principal-titulo a:hover {
     text-decoration: underline;
 }
 
-p {
-    margin: 16px;
+.section-principal p {
+    margin: 0 0 1em;
     text-align: justify;
 }
 
 .missao {
-    font-size: 24px;
+    font-size: 1em;
+}
+
+.missao em {
+    font-style: italic;
+}
+
+.missao strong {
     font-weight: bold;
 }
 
-em strong {
-    color: #ff0000;
-}
-
-.beneficios {
+.section-beneficios {
     background-color: #fff;
     padding: 16px;
 }
 
-.beneficios ul {
+.section-beneficios-titulo {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 0 1em;
+    text-align: center;
+}
+
+.section-beneficios ul {
     display: inline-block;
     vertical-align: top;
     width: 20%;
@@ -100,12 +117,12 @@ em strong {
     margin-right: 15%;
 }
 
-.itens {
+.section-beneficios-itens {
     font-style: italic;
     margin-bottom: 16px;
 }
 
-.image-beneficios {
+.section-beneficios-image {
     width: 50%;
 }
 

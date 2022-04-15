@@ -28,7 +28,7 @@ nav {
 
 nav li {
     display: inline;
-    margin: 0 8px 16px 8px;
+    margin: 0 0 16px 8px;
 }
 
 nav a {
@@ -72,37 +72,38 @@ form legend {
 }
 
 .enviar {
-  width: 40%;
-  padding: 15px 0;
-  background-color: orange;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  border: none;
-  border-radius: 5px;
-  transition: 0.5s all;
-  cursor: pointer;
+    width: 40%;
+    padding: 15px 0;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s all;
+    cursor: pointer;
 }
 
 .enviar:hover {
-  background-color: darkorange;
-  transform: scale(1.1);
+    background-color: darkorange;
+    transform: scale(1.1);
 }
 
 table {
-  margin: 20px 16px;
+    margin: 20px 16px;
 }
 
 thead {
-  background-color: #c8c8c8;
-  color: white;
-  font-weight: bold;
+    background-color: #c8c8c8;
+    color: white;
+    font-weight: bold;
 }
 
-td, th {
-  border: 1px solid #000000;
-  padding: 8px 15px;
-  text-align: center;
+td,
+th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+    text-align: center;
 }
 
 footer {
