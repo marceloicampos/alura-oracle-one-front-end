@@ -1,3 +1,6 @@
 #Vscode Files
 /vscode
 .vscode
+
+# Dependency directories
+node_modules/
