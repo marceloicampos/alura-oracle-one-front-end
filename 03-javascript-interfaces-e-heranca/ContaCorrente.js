@@ -2,11 +2,6 @@ import { Cliente } from './Cliente.js'
 
 export class ContaCorrente {
     static numeroDeContas = 0
-    agencia
-    numero
-
-    _cliente
-    _saldo = 0
 
     set cliente(novoValor) {
         if (novoValor instanceof Cliente) {
@@ -23,6 +18,7 @@ export class ContaCorrente {
     }
 
     constructor(agencia, numero, cliente) {
+        this._saldo = 0
         this.agencia = agencia
         this.numero = numero
         this._cliente = cliente
