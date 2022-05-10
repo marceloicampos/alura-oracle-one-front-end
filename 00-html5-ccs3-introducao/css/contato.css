@@ -108,7 +108,7 @@ th {
 
 footer {
     text-align: center;
-    background-image: url('/00-html5-ccs3-introducao/images/bg.jpg');
+    background-image: url(../images/bg.jpg);
     padding: 40px 0;
 }
 
