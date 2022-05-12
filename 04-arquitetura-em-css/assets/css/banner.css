@@ -3,6 +3,11 @@
 }
 
 .banner__image {
+    background: url('../img/banner.jpg') no-repeat center / cover;
+    /* background-image: url('../img/banner.jpg') */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
     height: calc(75vh - 72px);
     width: 100%;
 }
