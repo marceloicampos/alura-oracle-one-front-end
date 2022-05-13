@@ -2,3 +2,20 @@
     display: flex;
     flex-direction: column;
 }
+
+@media screen and (min-width: 0) {
+    .pessoas__div {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pessoas__div {
+        margin-bottom: 0;
+        margin-right: 2rem;
+    }
+    .pessoas__div:last-child {
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+}
