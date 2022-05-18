@@ -97,34 +97,53 @@
 /* -------------------- */
 
 .rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
 }
 
 .rodapePrincipal-patrocinadores-list {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 5%;
+    width: 70%;
+    background-color: green;
 }
 
 .rodapePrincipal-patrocinadores-list-link {
 }
 
 .patrocinadores-list-link-alura {
+    background-color: pink;
 }
 
 .patrocinadores-list-link-caelum {
+    background-color: pink;
 }
 
 .patrocinadores-list-link-casaDoCodigo {
+    background-color: pink;
 }
 
 .rodapePrincipal-contatoForm {
+    width: 25%;
+    background-color: purple;
 }
 
 .rodapePrincipal-contatoForm-legend {
+    background-color: darkgoldenrod;
 }
 
 .rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+    background-color: aqua;
 }
 
 .rodapePrincipal-contatoForm-emailInput {
+    background-color: lightcoral;
 }
 
 .rodapePrincipal-contatoForm-submit {
+    background-color: lime;
 }
