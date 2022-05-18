@@ -29,6 +29,8 @@
 /* -------------------- */
 
 .conteudoPrincipal .container {
+    display: flex;
+    flex-direction: column;
 }
 
 .conteudoPrincipal .subtitulo {
@@ -36,9 +38,24 @@
 }
 
 .conteudoPrincipal-cursos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-flow: row wrap; */
+    /* justify-content: flex-start; */
 }
 
 .conteudoPrincipal-cursos-link {
+    margin: 1%;
+    width: 23%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n + 1) {
+    margin-left: 0;
 }
 
 /* -------------------- */
