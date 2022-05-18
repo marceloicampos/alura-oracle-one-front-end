@@ -1,0 +1,130 @@
+.subtitulo {
+}
+
+/* -------------------- */
+
+.cabecalhoPrincipal .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+}
+
+.cabecalhoPrincipal-titulo {
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    background-color: blue;
+}
+
+.cabecalhoPrincipal-nav {
+    display: flex;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    background-color: green;
+}
+
+.cabecalhoPrincipal-nav-link {
+    background-color: yellow;
+}
+
+.cabecalhoPrincipal-nav-link-app {
+    background-color: purple;
+}
+
+/* -------------------- */
+
+.conteudoPrincipal {
+}
+
+.conteudoPrincipal-cursos {
+}
+
+.conteudoPrincipal-cursos-link {
+}
+
+/* -------------------- */
+
+.videoSobre {
+}
+
+.videoSobre-video {
+}
+
+.videoSobre-sobre {
+}
+
+.videoSobre-sobre-title {
+}
+
+.videoSobre-sobre-list {
+}
+
+.videoSobre-sobre-item {
+}
+
+.videoSobre-button {
+}
+
+/* -------------------- */
+
+.rodapePrincipal {
+}
+
+.rodapePrincipal-navMap {
+}
+
+.rodapePrincipal-navMap-list {
+}
+
+.navmap-list-title {
+}
+
+.navmap-list-title-backend {
+}
+
+.navmap-list-title-frontend {
+}
+
+.navmap-list-title-framework {
+}
+
+.navmap-list-title-bancoDeDados {
+}
+
+.rodapePrincipal-navMap-link {
+}
+
+/* -------------------- */
+
+.rodapePrincipal-patrocinadores .container {
+}
+
+.rodapePrincipal-patrocinadores-list {
+}
+
+.rodapePrincipal-patrocinadores-list-link {
+}
+
+.patrocinadores-list-link-alura {
+}
+
+.patrocinadores-list-link-caelum {
+}
+
+.patrocinadores-list-link-casaDoCodigo {
+}
+
+.rodapePrincipal-contatoForm {
+}
+
+.rodapePrincipal-contatoForm-legend {
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+}
+
+.rodapePrincipal-contatoForm-emailInput {
+}
+
+.rodapePrincipal-contatoForm-submit {
+}
