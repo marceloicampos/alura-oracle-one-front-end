@@ -1,4 +1,5 @@
 .subtitulo {
+    background-color: blueviolet;
 }
 
 /* -------------------- */
@@ -74,24 +75,31 @@
 }
 
 .rodapePrincipal-navMap-list {
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    flex-flow: column wrap;
+    height: 256px;
 }
 
-.navmap-list-title {
+.navmap-list-title .navmap-list-title-backend {
+    background-color: red;
 }
 
-.navmap-list-title-backend {
+.navmap-list-title .navmap-list-title-frontend {
+    background-color: green;
 }
 
-.navmap-list-title-frontend {
+.navmap-list-title .navmap-list-title-framework {
+    background-color: blue;
 }
 
-.navmap-list-title-framework {
-}
-
-.navmap-list-title-bancoDeDados {
+.navmap-list-title .navmap-list-title-bancoDeDados {
+    background-color: yellow;
 }
 
 .rodapePrincipal-navMap-link {
+    background-color: purple;
 }
 
 /* -------------------- */
