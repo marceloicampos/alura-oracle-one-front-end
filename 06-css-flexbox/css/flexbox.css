@@ -1,9 +1,3 @@
-.subtitulo {
-    background-color: blueviolet;
-}
-
-/* -------------------- */
-
 .cabecalhoPrincipal .container {
     align-items: center;
     display: flex;
@@ -34,7 +28,11 @@
 
 /* -------------------- */
 
-.conteudoPrincipal {
+.conteudoPrincipal .container {
+}
+
+.conteudoPrincipal .subtitulo {
+    background-color: blueviolet;
 }
 
 .conteudoPrincipal-cursos {
@@ -45,7 +43,7 @@
 
 /* -------------------- */
 
-.videoSobre {
+.videoSobre .container {
 }
 
 .videoSobre-video {
@@ -68,10 +66,14 @@
 
 /* -------------------- */
 
-.rodapePrincipal {
+.rodapePrincipal .container {
 }
 
 .rodapePrincipal-navMap {
+}
+
+.rodapePrincipal-navMap .subtitulo {
+    background-color: yellow;
 }
 
 .rodapePrincipal-navMap-list {
