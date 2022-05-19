@@ -2,28 +2,23 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    background-color: red;
 }
 
 .cabecalhoPrincipal-titulo {
     /* display: inline-block; */
     /* vertical-align: middle; */
-    background-color: blue;
 }
 
 .cabecalhoPrincipal-nav {
     display: flex;
     /* display: inline-block; */
     /* vertical-align: middle; */
-    background-color: green;
 }
 
 .cabecalhoPrincipal-nav-link {
-    background-color: yellow;
 }
 
 .cabecalhoPrincipal-nav-link-app {
-    background-color: purple;
 }
 
 /* -------------------- */
@@ -34,7 +29,6 @@
 }
 
 .conteudoPrincipal .subtitulo {
-    background-color: blueviolet;
 }
 
 .conteudoPrincipal-cursos {
@@ -90,7 +84,6 @@
 }
 
 .rodapePrincipal-navMap .subtitulo {
-    background-color: yellow;
 }
 
 .rodapePrincipal-navMap-list {
@@ -101,24 +94,22 @@
     height: 256px;
 }
 
-.navmap-list-title .navmap-list-title-backend {
-    background-color: red;
+.navmap-list-title {
 }
 
-.navmap-list-title .navmap-list-title-frontend {
-    background-color: green;
+.navmap-list-title-backend {
 }
 
-.navmap-list-title .navmap-list-title-framework {
-    background-color: blue;
+.navmap-list-title-frontend {
 }
 
-.navmap-list-title .navmap-list-title-bancoDeDados {
-    background-color: yellow;
+.navmap-list-title-framework {
+}
+
+.navmap-list-title-bancoDeDados {
 }
 
 .rodapePrincipal-navMap-link {
-    background-color: purple;
 }
 
 /* -------------------- */
@@ -126,7 +117,6 @@
 .rodapePrincipal-patrocinadores .container {
     display: flex;
     justify-content: space-between;
-    background-color: red;
 }
 
 .rodapePrincipal-patrocinadores-list {
@@ -135,42 +125,75 @@
     justify-content: space-around;
     margin-right: 5%;
     width: 70%;
-    background-color: green;
 }
 
 .rodapePrincipal-patrocinadores-list-link {
 }
 
 .patrocinadores-list-link-alura {
-    background-color: pink;
 }
 
 .patrocinadores-list-link-caelum {
-    background-color: pink;
 }
 
 .patrocinadores-list-link-casaDoCodigo {
-    background-color: pink;
 }
 
 .rodapePrincipal-contatoForm {
     width: 25%;
-    background-color: purple;
 }
 
 .rodapePrincipal-contatoForm-legend {
-    background-color: darkgoldenrod;
 }
 
 .rodapePrincipal-contatoForm-fieldset {
     display: flex;
-    background-color: aqua;
 }
 
 .rodapePrincipal-contatoForm-emailInput {
-    background-color: lightcoral;
 }
 
 .rodapePrincipal-contatoForm-submit {
-    background-color: lime;
+}
+
+@media (max-width: 768px) {
+    .cabecalhoPrincipal .container {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+
+    .cabecalhoPrincipal-nav {
+        flex-direction: column;
+    }
+
+    .conteudoPrincipal-cursos {
+        flex-direction: column;
+    }
+
+    .conteudoPrincipal-cursos-link {
+        width: 100%;
+    }
+
+    .rodapePrincipal-navMap-list {
+        height: auto;
+    }
+
+    .rodapePrincipal-patrocinadores .container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
 }
