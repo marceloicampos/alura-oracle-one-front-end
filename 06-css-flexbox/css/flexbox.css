@@ -55,18 +55,27 @@
 /* -------------------- */
 
 .videoSobre .container {
+    display: flex;
+    flex-direction: row;
 }
 
 .videoSobre-video {
+    flex-grow: 2;
+    flex-shrink: 2;
 }
 
 .videoSobre-sobre {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+    text-align: center;
 }
 
 .videoSobre-sobre-title {
 }
 
 .videoSobre-sobre-list {
+    flex-grow: 1;
 }
 
 .videoSobre-sobre-item {
@@ -177,6 +186,14 @@
 
     .conteudoPrincipal-cursos-link {
         width: 100%;
+    }
+
+    .videoSobre .container {
+        flex-direction: column;
+    }
+
+    .videoSobre-video {
+        margin: 0 auto;
     }
 
     .rodapePrincipal-navMap-list {
