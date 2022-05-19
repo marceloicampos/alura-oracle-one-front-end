@@ -1,3 +1,8 @@
+const banana = ('b' + 'a' + + 'a' + 'a').toLowerCase()
+console.log(banana);
+
+// -------------------------
+
 const myName = 'marcelo'
 console.log(myName)
 
