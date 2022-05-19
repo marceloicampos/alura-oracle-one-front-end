@@ -4,31 +4,11 @@
     justify-content: space-between;
 }
 
-.cabecalhoPrincipal-titulo {
-    /* display: inline-block; */
-    /* vertical-align: middle; */
-}
-
-.cabecalhoPrincipal-nav {
-    display: flex;
-    /* display: inline-block; */
-    /* vertical-align: middle; */
-}
-
-.cabecalhoPrincipal-nav-link {
-}
-
-.cabecalhoPrincipal-nav-link-app {
-}
-
 /* -------------------- */
 
 .conteudoPrincipal .container {
     display: flex;
     flex-direction: column;
-}
-
-.conteudoPrincipal .subtitulo {
 }
 
 .conteudoPrincipal-cursos {
@@ -71,29 +51,11 @@
     text-align: center;
 }
 
-.videoSobre-sobre-title {
-}
-
 .videoSobre-sobre-list {
     flex-grow: 1;
 }
 
-.videoSobre-sobre-item {
-}
-
-.videoSobre-button {
-}
-
 /* -------------------- */
-
-.rodapePrincipal .container {
-}
-
-.rodapePrincipal-navMap {
-}
-
-.rodapePrincipal-navMap .subtitulo {
-}
 
 .rodapePrincipal-navMap-list {
     display: flex;
@@ -101,24 +63,6 @@
     /* flex-wrap: wrap; */
     flex-flow: column wrap;
     height: 256px;
-}
-
-.navmap-list-title {
-}
-
-.navmap-list-title-backend {
-}
-
-.navmap-list-title-frontend {
-}
-
-.navmap-list-title-framework {
-}
-
-.navmap-list-title-bancoDeDados {
-}
-
-.rodapePrincipal-navMap-link {
 }
 
 /* -------------------- */
@@ -136,33 +80,12 @@
     width: 70%;
 }
 
-.rodapePrincipal-patrocinadores-list-link {
-}
-
-.patrocinadores-list-link-alura {
-}
-
-.patrocinadores-list-link-caelum {
-}
-
-.patrocinadores-list-link-casaDoCodigo {
-}
-
 .rodapePrincipal-contatoForm {
     width: 25%;
 }
 
-.rodapePrincipal-contatoForm-legend {
-}
-
 .rodapePrincipal-contatoForm-fieldset {
     display: flex;
-}
-
-.rodapePrincipal-contatoForm-emailInput {
-}
-
-.rodapePrincipal-contatoForm-submit {
 }
 
 @media (max-width: 768px) {
