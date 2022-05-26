@@ -1,14 +1,17 @@
 .app {
     background: #f1f1f1;
-    display: grid;  
+    display: grid;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .cabecalho {
+    background-color: red;
 }
- 
+
 .conteudo {
+    background-color: green;
 }
 
 .rodape {
+    background-color: blue;
 }
