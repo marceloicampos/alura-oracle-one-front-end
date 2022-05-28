@@ -1,0 +1,124 @@
+.destaques {
+    display: grid;
+    grid-gap: 0.2rem;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    height: calc(100vh - 50px);
+}
+
+.destaques__principal {
+    background: url('../img/fortnite.jpg') center / cover no-repeat;
+    /* background-image: url('../img/fortnite.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+    grid-column: 1/4;
+    /* grid-column-start: 1;
+  grid-column-end: 4; */
+    grid-row: 1/3;
+    /* grid-row-start: 1;
+  grid-row-end: 3; */
+}
+
+.destaques__titulo {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fdfdfd;
+    padding: 0.6rem;
+    text-align: center;
+    width: 100%;
+}
+
+.destaques__secundario:nth-child(2) {
+    background: url('../img/pubg.jpg') center / cover no-repeat;
+    /* background-image: url('../img/pubg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+    grid-column: 4/4;
+    /* grid-column-start: 4;
+  grid-column-end: 4; */
+    grid-row: 1/1;
+    /* grid-row-start: 1;
+  grid-row-end: 1; */
+}
+
+.destaques__secundario:nth-child(3) {
+    background: url('../img/slack.png') center / cover no-repeat;
+    /* background-image: url('../img/slack.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+    grid-column: 4/4;
+    /* grid-column-start: 4;
+  grid-column-end: 4; */
+    grid-row: 2/2;
+    /* grid-row-start: 2;
+  grid-row-end: 2; */
+}
+
+.destaques__secundario:nth-child(4) {
+    background: url('../img/whatsapp.png') center / cover no-repeat;
+    /* background-image: url('../img/whatsapp.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+    grid-column: 4/4;
+    /* grid-column-start: 4;
+  grid-column-end: 4; */
+    grid-row: 3/3;
+    /* grid-row-start: 3;
+  grid-row-end: 3; */
+}
+
+.destaques__secundario:nth-child(5) {
+    background: url('../img/cs-go.jpg') center / cover no-repeat;
+    /* background-image: url('../img/cs-go.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+    grid-column: 3/3;
+    /* grid-column-start: 3;
+  grid-column-end: 3; */
+    grid-row: 3/3;
+    /* grid-row-start: 3;
+    grid-row-end: 3; */
+}
+
+.caixa {
+    align-items: flex-end;
+    /* background: #dcdcdc; */
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------- */
+
+.destaques__categorias {
+    grid-column: 1 / 3;
+    grid-row: 3 / 3;
+}
+
+.destaques__categorias___lista {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.destaques__categorias___item {
+    align-items: center;
+    background: #fdfdfd;
+    border-left: 1px solid transparent;
+    color: #333333;
+    display: flex;
+    padding: 1rem;
+    width: 50%;
+}
+
+.destaques__categorias___link {
+    color: inherit;
+}
+
+.destaques__categorias___icone {
+    background-color: #00ff00;
+}

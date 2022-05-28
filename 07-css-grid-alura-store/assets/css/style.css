@@ -11,16 +11,16 @@
 }
 
 .cabecalho {
-    background-color: #00ff00;
+    /* background-color: #00ff00; */
     grid-area: cabecalho;
 }
 
 .conteudo {
-    background-color: #ff0000;
+    /* background-color: #ff0000; */
     grid-area: conteudo;
 }
 
 .rodape {
-    background-color: #0000ff;
+    /* background-color: #0000ff; */
     grid-area: rodape;
 }
