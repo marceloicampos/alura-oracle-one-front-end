@@ -1,0 +1,43 @@
+* {
+    --branco: #fff;
+    --azul-claro: #dfe3e5;
+    --vermelho-forte: #b72e2e;
+    --cinza-escuro: #4f4c4c;
+    --cinza-claro: #f7f4f4;
+    --cinza-medio: #d9d9d9;
+
+    --fonte-link: #0084ff;
+    --fonte-cinza: #666;
+    --borda-cabecalho-mobile: #103d4a;
+    --bg-rodape: #333;
+    --bg-chamada-mobile: #00161c;
+
+    --planos-cartao-start: #56ccf2;
+    --planos-cartao-ultra: #b04cd9;
+    --planos-cartao-mega: #e33b3b;
+
+    --fonte-monte: 'Montserrat', sans-serif;
+}
+
+/* --nome-da-variavel: valor > CRIAR */
+/* var(--nome-da-variavel: valor) > USAR */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+.botao {
+    border: 1px solid var(--branco);
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+    max-width: 350px;
+    padding: 1rem 2rem;
+    text-align: center;
+    width: 100%;
+}
