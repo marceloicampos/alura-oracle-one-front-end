@@ -48,9 +48,9 @@
         'card-imagem'
         'card-corpo';
     grid-template-columns: 100%;
-    grid-template-rows: 173px auto;
-    margin-right: 1rem;
-    width: calc(20% - 1rem);
+    /* grid-template-rows: 173px auto; */  /*retirado pelo responsivo*/
+    /* margin-right: 1rem; */ /*retirado pelo responsivo*/
+    /* width: calc(20% - 1rem); */  /*retirado pelo responsivo*/
 }
 
 .populares__card:last-child {
