@@ -8,8 +8,8 @@
         'rodape';
     grid-template-columns: auto;
     grid-template-rows: 50px auto auto;
-    /* max-width: 1440px;
-    margin: 0 auto; */
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .cabecalho {
