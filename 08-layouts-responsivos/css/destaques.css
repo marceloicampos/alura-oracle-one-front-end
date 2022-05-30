@@ -1,0 +1,36 @@
+.destaques {
+    background-color: var(--azul-claro);
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+}
+.destaques__titulo {
+    color: var(--cinza-escuro);
+    font-family: var(--fonte-monte);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.destaques__painel {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.destaques__painel-image {
+    box-shadow: 0 2px 10px 5px #00000020;
+    margin-bottom: 0.5rem;
+    width: 100vw;
+    max-width: 600px;
+}
+.destaques__painel-texto {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: normal;
+}
+.destaques__botao {
+  color: var(--vermelho-forte);
+  border: 1px solid var(--vermelho-forte);
+  margin:  0 auto;
+}
