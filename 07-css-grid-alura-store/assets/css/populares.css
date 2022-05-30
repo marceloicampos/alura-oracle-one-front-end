@@ -4,13 +4,13 @@
 
 /* ------------------- */
 
-.populares__itens {
+/* .populares__itens {
     background-color: coral;
-}
+} */
 
-.populares__info {
+/* .populares__info {
     background-color: aqua;
-}
+} */
 
 .populares__cabecalho {
     border-bottom: 1px solid #dcdcdc;
@@ -74,9 +74,9 @@
     padding: 0.75rem;
 }
 
-.populares__card___cabecalho {
+/* .populares__card___cabecalho {
     background-color: pink;
-}
+} */
 
 .populares__card___titulo {
     color: #333333;
