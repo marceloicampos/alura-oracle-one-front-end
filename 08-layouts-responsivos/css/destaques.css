@@ -30,7 +30,7 @@
     line-height: normal;
 }
 .destaques__botao {
-  color: var(--vermelho-forte);
-  border: 1px solid var(--vermelho-forte);
-  margin:  0 auto;
+    color: var(--vermelho-forte);
+    border: 1px solid var(--vermelho-forte);
+    margin: 0 auto;
 }

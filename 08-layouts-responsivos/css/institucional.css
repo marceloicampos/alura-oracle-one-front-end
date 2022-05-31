@@ -49,19 +49,19 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .institucional__conteudo {
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    width: 100%;
-  }
+    .institucional__conteudo {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        width: 100%;
+    }
 
-  .institucional__video {
-      align-self: center;
-      width: 375px;
-  }
+    .institucional__video {
+        align-self: center;
+        width: 375px;
+    }
 
-  .institucional__contato-email {
-      display: block;
-  }
+    .institucional__contato-email {
+        display: block;
+    }
 }
