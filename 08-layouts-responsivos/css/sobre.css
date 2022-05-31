@@ -41,10 +41,7 @@
 }
 
 .sobre__imagem {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    max-width: 350px;
-    width: 100%;
+    display: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -60,11 +57,11 @@
         text-align: left;
     }
 
-    .sobre__texto--divisao {
+    /* .sobre__texto--divisao {
         border-bottom: 1px solid var(--cinza-medio);
 
         padding-bottom: 1.5rem;
-    }
+    } */
 
     .sobre__imagem {
         display: block;

@@ -7,9 +7,13 @@
     padding-top: 2.5rem;
 }
 
+.rodape__logo {
+    margin-bottom: 2rem;
+}
+
 .rodape__social {
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .rodape__midia {

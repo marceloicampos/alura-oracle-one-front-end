@@ -48,6 +48,16 @@
     width: 100vw;
 }
 
+@media screen and (min-width:768px) {
+    .institucional__contato-email {
+        display: inline-block;
+    }
+
+    .institucional__video {
+        width: 100%;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .institucional__conteudo {
         display: flex;
@@ -56,8 +66,12 @@
         width: 100%;
     }
 
+    .institucional__informacoes {
+        display: flex;
+        flex-direction: column;
+    }
     .institucional__video {
-        align-self: center;
+        align-self: flex-end;
         width: 375px;
     }
 
