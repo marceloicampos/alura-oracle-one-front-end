@@ -1,14 +1,15 @@
 .rodape {
-    align-items: center;
     background-color: var(--bg-rodape);
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-bottom: 2rem;
     padding-top: 2.5rem;
 }
 
 .rodape__social {
     display: flex;
+    gap: 0.5rem;
 }
 
 .rodape__midia {
@@ -37,8 +38,7 @@
     }
 
     .rodape__navegacao {
-        text-align: left;
-
         min-width: 600px;
+        text-align: left;
     }
 }
