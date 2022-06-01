@@ -90,6 +90,8 @@ body {
     cursor: pointer;
 }
 
+/* toggle */
+
 .task.done .check-button {
     background-color: #46494c;
     color: #f6f1d1;
@@ -110,6 +112,7 @@ body {
 
 .task.done .content {
     text-decoration: line-through;
+    background-color: #dc143c;
 }
 
 /*# sourceMappingURL=style.css.map */
