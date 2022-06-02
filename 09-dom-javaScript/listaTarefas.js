@@ -1,4 +1,6 @@
-;(() => {
+import botaoConcluir from './componentes/botaoConcluir.js'
+import botaoDeletar from './componentes/botaoDeletar.js'
+
     const criarTarefa = event => {
         event.preventDefault()
 
@@ -32,36 +34,35 @@
     const novaTarefa = document.querySelector('[data-form-button]') // capture o botão do form para inserir NOVA TAREFA
     novaTarefa.addEventListener('click', criarTarefa) // quando o botão do form da NOVA TAREFA for clicado chame a constante CRIAR TAREFA
 
-    const botaoConcluir = () => {
-        // botaoConcluir recebe a seguinte execução
-        const botaoConclui = document.createElement('button') // crie um elemento <button>
-        botaoConclui.classList.add('check-button') // adicione ao elemento <button> uma class"check-button"
-        botaoConclui.innerText = 'Marcar Concluído' // insira no elemento <button> o text 'Marcar Concluído'
-        botaoConclui.addEventListener('click', concluirTarefa) // quando o botaoConclui for clicado chame a constante CONCLUIR TAREFA
-        return botaoConclui // faça o retorno do para "fora" do botaoConcluir o botaoConclui (já construído) para quem chamar o botaoConcluir
-    }
+    // const botaoConcluir = () => {
+    //     // botaoConcluir recebe a seguinte execução
+    //     const botaoConclui = document.createElement('button') // crie um elemento <button>
+    //     botaoConclui.classList.add('check-button') // adicione ao elemento <button> uma class"check-button"
+    //     botaoConclui.innerText = 'Marcar Concluído' // insira no elemento <button> o text 'Marcar Concluído'
+    //     botaoConclui.addEventListener('click', concluirTarefa) // quando o botaoConclui for clicado chame a constante CONCLUIR TAREFA
+    //     return botaoConclui // faça o retorno do para "fora" do botaoConcluir o botaoConclui (já construído) para quem chamar o botaoConcluir
+    // }
 
-    const concluirTarefa = evento => {
-        // a concluirTarefa recebe como argumento um evento, mas não sabemos qual evento
-        const botaoConclui = evento.target // o botaoConclui recebe esse evento, mas agora sabendo o alvo (target) que foi clicado, ou seja, o botaoConclui agora é o alvo do evento
-        const tarefaCompleta = botaoConclui.parentElement // o tarefaCompleta recebe o alvo do evento do botaoConclui e joga o alvo para o elemento PAI que é a <li> que a TAREFA
-        tarefaCompleta.classList.toggle('done') // agora o alvo que é a <li> TAREFA recebe uma class"task done" ou class"task" que é alternada pelo toggle, assim podemos marcar como concluída ou não concluída a tarefa
-    }
+    // const concluirTarefa = evento => {
+    //     // a concluirTarefa recebe como argumento um evento, mas não sabemos qual evento
+    //     const botaoConclui = evento.target // o botaoConclui recebe esse evento, mas agora sabendo o alvo (target) que foi clicado, ou seja, o botaoConclui agora é o alvo do evento
+    //     const tarefaCompleta = botaoConclui.parentElement // o tarefaCompleta recebe o alvo do evento do botaoConclui e joga o alvo para o elemento PAI que é a <li> que a TAREFA
+    //     tarefaCompleta.classList.toggle('done') // agora o alvo que é a <li> TAREFA recebe uma class"task done" ou class"task" que é alternada pelo toggle, assim podemos marcar como concluída ou não concluída a tarefa
+    // }
 
-    const botaoDeletar = () => {
-        const botaoDeleta = document.createElement('button')
-        botaoDeleta.classList.add('delete-button')
-        botaoDeleta.innerText = 'Deletar Tarefa'
-        botaoDeleta.addEventListener('click', deletarTarefa)
-        return botaoDeleta
-    }
+    // const botaoDeletar = () => {
+    //     const botaoDeleta = document.createElement('button')
+    //     botaoDeleta.classList.add('delete-button')
+    //     botaoDeleta.innerText = 'Deletar Tarefa'
+    //     botaoDeleta.addEventListener('click', deletarTarefa)
+    //     return botaoDeleta
+    // }
 
-    const deletarTarefa = evento => {
-        const botaoDeleta = evento.target
-        const tarefaDeletada = botaoDeleta.parentElement
-        tarefaDeletada.remove()
-    }
+    // const deletarTarefa = evento => {
+    //     const botaoDeleta = evento.target
+    //     const tarefaDeletada = botaoDeleta.parentElement
+    //     tarefaDeletada.remove()
+    // }
 
     // ;(()=>{DENTRO VAI O CÓDIGO}()  “IIFE”, ou Immediately Invoked Function Expression ou “Função de Invocação Imediata”, para impedir acesso ao código e
     // assim encapsulamos o código que não pode mais ser acessado de forma global
-})()
