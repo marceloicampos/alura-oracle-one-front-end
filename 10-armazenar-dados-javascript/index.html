@@ -17,13 +17,15 @@
             <div class="todo-list">
                 <p><a class="link" href="../">Voltar para Home</a></p>
                 <h1 class="title">Ceep</h1>
-                <form class="form" action="">
+                <form class="form" action="" data-form>
                     <input class="form-input" type="text" data-form-input />
+                    <input type="datetime-local" date-form-input />
                     <button class="form-button" data-form-button>Novo Item</button>
                 </form>
                 <ul class="list" data-list></ul>
             </div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
         <script type="module" src="main.js"></script>
     </body>
 </html>
