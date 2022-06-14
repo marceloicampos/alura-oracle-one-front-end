@@ -14,7 +14,7 @@ export const handleNovoItem = evento => {
     const inputData = document.querySelector('[data-form-input]')
     const inputDate = document.querySelector('[date-form-input]')
     const data = inputData.value
-    const date = moment(inputDate.value).format('DD/MM/YYYY, H:MM')
+    const date = moment(inputDate.value).format('DD/MM/YYYY')
 
     const dados = {
         date,
