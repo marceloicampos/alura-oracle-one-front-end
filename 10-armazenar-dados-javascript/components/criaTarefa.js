@@ -15,11 +15,13 @@ export const handleNovoItem = evento => {
     const inputDate = document.querySelector('[date-form-input]')
     const data = inputData.value
     const date = moment(inputDate.value).format('DD/MM/YYYY')
+    const horario = moment(inputDate.value).format('HH:mm')
 
     const concluida = false
 
     const dados = {
         date,
+        horario,
         data,
         concluida
     }
@@ -36,10 +38,10 @@ export const handleNovoItem = evento => {
     carregaTarefa()
 }
 
-export const Tarefa = ({ date, data, concluida }, id) => {
+export const Tarefa = ({ date, horario, data, concluida }, id) => {
     const tarefa = document.createElement('li')
 
-    const conteudo = `<p class="content">${date} * ${data}</p>`
+    const conteudo = `<p class="content">${date} - ${horario} * ${data}</p>`
 
     if (concluida) {
         tarefa.classList.add('done')
@@ -49,7 +51,7 @@ export const Tarefa = ({ date, data, concluida }, id) => {
     tarefa.innerHTML = conteudo
 
     tarefa.appendChild(BotaoConclui(carregaTarefa, id))
-    tarefa.appendChild(BotaoDeleta())
+    tarefa.appendChild(BotaoDeleta(carregaTarefa, id))
 
     return tarefa
 }
