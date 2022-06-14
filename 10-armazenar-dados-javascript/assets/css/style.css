@@ -80,6 +80,10 @@ body {
     margin: 0 auto 0 0;
 }
 
+.content-data {
+    color: #f6f1d1;
+}
+
 .check-button,
 .delete-button {
     background-color: #f6f1d1;
