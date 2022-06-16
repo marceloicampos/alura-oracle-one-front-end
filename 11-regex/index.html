@@ -6,7 +6,6 @@
         <link rel="stylesheet" href="css/bootstrap.css" />
         <link rel="stylesheet" href="css/bootstrap-theme.css" />
     </head>
-
     <body class="container">
         <h1 class="text-left">Expressões regulares</h1>
         <p><a class="link" href="../">Voltar para Home</a></p>
@@ -15,43 +14,145 @@
                 <label for="target">Target string (alvo)</label>
                 <input type="text" id="target" class="form-control" value="" autocomplete="off" required autofocus placeholder="Digite um target" />
             </div>
-
             <div class="form-group">
                 <label for="pattern">Pattern (expressão regular)</label>
                 <input type="text" id="pattern" class="form-control" value="" autocomplete="off" required placeholder="Digite um pattern" />
             </div>
-
             <div class="form-group">
                 <button class="btn btn-primary" onclick="executa(event)">Executar Regex</button>
             </div>
-
             <div class="checkbox">
                 <label><input type="checkbox" id="mostraIndex" value="true" />Mostra índice </label>
                 <label></label>
                 <label><input type="checkbox" id="mostraGrupos" value="true" />Mostra grupos </label>
             </div>
-
             <div class="form-group">
                 <label for="resultado" id="labelResultados">Matches (resultados)</label>
                 <input type="text" id="resultado" class="form-control" value="" readonly />
             </div>
-
             <div class="form-group">
                 <label for="resultado" id="labelHighlight">Highlight</label>
                 <div id="highlightText" style="font-size: 30px"></div>
             </div>
         </form>
-
         <br />
         <br />
         <br />
         <br />
-
         <div class="form-group">
             <textarea class="form-control" rows="5" id="comment"></textarea>
         </div>
         <br />
+        <br />
+        <br />
+        <br />
+        <div>
+            <p>João Fulano, 123.456.789-00, 1 de Maio de 1993, (21) 3079-9987, Rua do Ouvidor,50, 20040-030, Rio de Janeiro</p>
+            <p>Maria Fulana, 98765432100, 11 de Março de 1995, (11) 933339871, Rua Vergueiro,3185, 04101-300, São Paulo</p>
+            <p>Denise teste, 987.654.321.00, 28 de Dezembro de 1991, (31)45562712, SCS Qd. 8 Bl. B-50,11, 70333-900, Rio Grande do Sul</p>
+            <hr />
+            <p>REGEX para CPF: [0-9]{3}\.?\d{3}\.{0,1}\d{3}[-.]?\d{2}</p>
+            <p>REGEX para CEP: \d{5}-?\d{3}</p>
+            <p>REGEX para DATA: \d?\d\s*de\s+[A-Z][a-zç]{3,8}\s+de\s+\d{4}</p>
+            <p>REGEX para DATA: \d?\d\s*de\s+[^,]{3,8}\s+de\s+\d{4}</p>
+            <hr />
+            <p>NOTA: [^,] pega qualquer dígito que NÃO seja uma vírgula, ^ É UMA NEGAÇÃO</p>
+            <hr />
+            <p>[ ] - é [0-9] limitação de caracteres</p>
+            <p>{ } - é {quantidade} de caractere</p>
+            <p>( ) - é para definir resultados em grupos</p>
+            <p>. - é qualquer caractere</p>
+            <p>\ - é escapar para caractere literal</p>
+            <p>? ou {0,1} - é "dúvida" ou pode NÃO ter=0 ou pode ter=1 o caractere</p>
+            <hr />
+            <p>Classes de Char [ ]</p>
+            <br />
+            <p>[A-Z] - letras de A até Z</p>
+            <p>[0-9] - números de 1 até 9</p>
+            <p>\d - dígitos [0-9]</p>
+            <p>\s - espaço [\t &nbsp;\r &nbsp;\n &nbsp;\f]</p>
+            <p>\w - word char [A-Za-z09_]</p>
+            <hr />
+            <p>Quantifier</p>
+            <br />
+            <p>O símbolo + é um outro atalho para definir a quantidade e agora já conhecemos todos:</p>
+            <p>\d\d\s{1,}</p>
+            <p>\d\d\s+</p>
+            <p>\d\d\s*</p>
+            <br />
+            <p>? - zero ou uma vez.</p>
+            <p>* - zero ou mais vezes.</p>
+            <p>+ - uma ou mais vezes.</p>
+            <p>{n} - exatamente n vezes.</p>
+            <p>{n,} - no mínimo n vezes.</p>
+            <p>{n,m} - no mínimo n vezes, no máximo m vezes.</p>
+            <hr />
+            <p>A \s. \s significa whitespace. A definição do \s pode variar um pouco entre as implementações,</p>
+            <p>normalmente é um atalho para [\t\r\n\f] onde o primeiro caractere é um espaço branco.</p>
+            <p>\t é um tab.</p>
+            <p>\r é carriage return.</p>
+            <p>\n é newline.</p>
+            <p>\f é form feed.</p>
+            <hr />
+            <p>Por fim, não podemos esquecer de mencionar a classe de word char. Um word char é apresentado com \w e é um atalho para [A-Za-z0-9_]</p>
+            <hr />
+            <p>Exemplo de placa: KMG-8089</p>
+            <p>[A-Z]{3}-\d{4}</p>
+            <hr />
 
+            <p>Âncoras</p>
+            <br />
+            <p>Uma âncora não casa caracteres como as classes fazem, e nem definem quantidades.</p>
+            <p>Âncoras marcam uma posição específica no alvo, por isso não é possível combiná-las com um quantifier.</p>
+            <p>Existem várias âncoras predefinidas, mas as mais comuns são ^, $ e \b.</p>
+            <p>Lembrando também que os caracteres ^ e $ são meta-chars.</p>
+            <br />
+            <p>\b - Word Boundary - palavra sem fronteira) - PALAVRA SOLTA</p>
+            <p>Exemplo: aaa- aaaa aaa aaaa aaa</p>
+            <p>\baaa\b</p>
+            <p>aaa | aaa | aaa - RETORNO</p>
+            <p>\bRio Grande do Sul\b</p>
+            <br />
+            <p>NOTA: Existe a inversão do \b, o non-word-boundary palavra COM fronteira: \B (B maiúsculo) - PALAVRA NÃO SOLTA</p>
+            <p>Exemplo: português proporcional comportar por e por</p>
+            <br />
+            <p>^ - NO INÍCIO</p>
+            <p>^ é uma âncora que seleciona o início da string alvo.</p>
+            <br />
+            <p>Exemplo: https://marceloicampos.github.io/alura-oracle-one-front-end/11-regex/index.html</p>
+            <p>^https</p>
+            <p>https - RETORNO</p>
+            <p>^https.+ (ONDE .+ É QUALQUER CARACTERE UMA OU + VEZES)</p>
+            <p>https://marceloicampos.github.io/alura-oracle-one-front-end/11-regex/index.html - RETORNO</p>
+            <br />
+            <p>$ - NO FIM</p>
+            <p>$ é uma âncora que seleciona o fim do alvo.</p>
+            <br />
+            <p>^https.+\.html$</p>
+            <p>https://marceloicampos.github.io/alura-oracle-one-front-end/11-regex/index.html - RETORNO</p>
+            <p>^https.+\.html$ (NO INÍCIO https e NO FINAL .html)</p>
+            <hr />
+            <p>Non-capturing groups!</p>
+            <br />
+            <p>Exemplo: João Fulano, 123.456.789-00, 1 de Maio de 1993, (21) 3079-9987, Rua do Ouvidor,50, 20040-030, Rio de Janeiro</p>
+            <p>(\d?\d)\s+(?:de\s+)?([A-Z][a-zç]{3,8})\s+(?:de\s+)?(\d{4})</p>
+            <p>Podemos usar um grupo que não é devolvido pela regex, para tal existem os non-capturing groups!</p>
+            <p>Usaremos o simbolo ?, mas agora no início do grupo junto com os dois pontos, por exemplo para a preposição de: (?:de\s+)?</p>
+            <p>Assim separamos em grupos e em grupos que não capturados pela Regex</p>
+            <hr />
+            <p>Expressões Gananciosas e Preguiçosas (Greedy and Lazy Regex)</p>
+            <br />
+            <p>Exemplo: &lt;h1 class="text-left"&gt;Expressões regulares&lt;/h1&gt;</p>
+            <p>&lt;h1.+&gt; - seleciona tudo até o final (ganancioso)</p>
+            <p>&lt;h1.+?&gt; - seleciona tudo até o final (preguiçoso)</p>
+            <hr />
+            <p>Back Reference Expression</p>
+            <br />
+            <p>Exemplo: &lt;h2 class="text-left"&gt;Expressões regulares&lt;/h2&gt;</p>
+            <p>&lt;(h1|h2).+?&gt;</p>
+            <p>&lt;(h1|h2).+?&gt;[\wõ\s]+&lt;\/.+ (seleciona tudo até o final)</p>
+            <p>&lt;(h1|h2).+?&gt;[\wõ\s]+&lt;\/\1. (só seleciona se a referência final 1 for igual a uma das referências iniciais</p>
+        </div>
         <script src="js/regex.js"></script>
     </body>
 </html>
