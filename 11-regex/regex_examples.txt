@@ -1,0 +1,105 @@
+João Fulano, 123.456.789-00, 1     de Maio de 1993, (21) 3079-9987, Rua do Ouvidor,50, 20040-030, Rio de Janeiro
+Maria Fulana, 98765432100, 11 de Março de 1995, (11) 933339871, Rua Vergueiro,3185, 04101-300, São Paulo
+Denise teste, 987.654.321.00, 28 de Dezembro de 1991, (31)45562712, SCS Qd. 8 Bl. B-50,11, 70333-900, Rio Grande do Sul
+---------------------------------------------------------------------
+REGEX para CPF: [0-9]{3}\.?\d{3}\.{0,1}\d{3}[-.]?\d{2}
+REGEX para CEP: \d{5}-?\d{3}
+REGEX para DATA: \d?\d\s*de\s+[A-Z][a-zç]{3,8}\s+de\s+\d{4}
+REGEX para DATA: \d?\d\s*de\s+[^,]{3,8}\s+de\s+\d{4}
+---------------------------------------------------------------------
+NOTA: [^,] pega qualquer dígito que não seja uma vírgula, ^ É UMA NEGAÇÃO
+---------------------------------------------------------------------
+[ ] - é [0-9] limitação de caracteres
+{ } - é {quantidade} de caractere
+( ) - é para definir resultados em grupos
+. - é qualquer caractere
+\ - é escapar para caractere literal
+? ou {0,1} - é "dúvida" ou pode NÃO ter=0 ou pode ter=1 o caractere
+---------------------------------------------------------------------
+Classes de Char [ ]
+
+[A-Z] - letras de A até Z
+[0-9] - números de 1 até 9
+\d - dígitos [0-9]
+\s - espaço [\t\r\n\f]
+\w - word char [A-Za-z09_]
+---------------------------------------------------------------------
+Quantifier
+
+O símbolo + é um outro atalho para definir a quantidade e agora já conhecemos todos:
+\d\d\s{1,}
+\d\d\s+
+\d\d\s*
+
+? - zero ou uma vez.
+* - zero ou mais vezes.
++ - uma ou mais vezes.
+{n} - exatamente n vezes.
+{n,} - no mínimo n vezes.
+{n,m} - no mínimo n vezes, no máximo m vezes.
+---------------------------------------------------------------------
+A \s. \s significa whitespace. A definição do \s pode variar um pouco entre as implementações,
+normalmente é um atalho para [ \t\r\n\f] onde: o primeiro caractere é um espaço branco.
+\t é um tab.
+\r é carriage return.
+\n é newline.
+\f é form feed.
+---------------------------------------------------------------------
+Por fim, não podemos esquecer de mencionar a classe de word char. Um word char é apresentado com \w e é um atalho para [A-Za-z0-9_].
+---------------------------------------------------------------------
+Exemplo de placa: KMG-8089
+[A-Z]{3}-\d{4}
+---------------------------------------------------------------------
+Âncoras
+
+Uma âncora não casa caracteres como as classes fazem, e nem definem quantidades.
+Âncoras marcam uma posição específica no alvo, por isso não é possível combiná-las com um quantifier.
+Existem várias âncoras predefinidas, mas as mais comuns são ^, $ e \b. 
+Lembrando também que os caracteres ^ e $ são meta-chars.
+
+\b  - Word Boundary - palavra sem fronteira) - PALAVRA SOLTA
+Exemplo: aaa- aaaa aaa aaaa aaa
+\baaa\b
+aaa | aaa | aaa - RETORNO
+\bRio Grande do Sul\b
+
+NOTA: Existe a inversão do \b, o non-word-boundary palavra COM fronteira: \B (B maiúsculo)PALAVRA NÃO SOLTA
+Exemplo: português proporcional comportar por e por
+
+^ - NO INÍCIO
+^ é uma âncora que seleciona o início da string alvo.
+
+Exemplo: https://marceloicampos.github.io/alura-oracle-one-front-end/11-regex/index.html
+^https
+https - RETORNO
+^https.+ (.+ É QUALQUER CARACTERE UMA OU + VEZES)
+https://marceloicampos.github.io/alura-oracle-one-front-end/11-regex/index.html - RETORNO
+
+$ - NO FIM
+$ é uma âncora que seleciona o fim do alvo.
+
+^https.+\.html$
+https://marceloicampos.github.io/alura-oracle-one-front-end/11-regex/index.html - RETORNO
+^https.+\.html$ (NO INÍCIO https e NO FINAL .html)
+
+---------------------------------------------------------------------
+Non-capturing groups!
+
+Exemplo: João Fulano, 123.456.789-00, 1     de Maio de 1993, (21) 3079-9987, Rua do Ouvidor,50, 20040-030, Rio de Janeiro
+(\d?\d)\s+(?:de\s+)?([A-Z][a-zç]{3,8})\s+(?:de\s+)?(\d{4})
+Podemos usar um grupo que não é devolvido pela regex, para tal existem os non-capturing groups!
+Usaremos o simbolo ?, mas agora no início do grupo junto com os dois pontos, por exemplo para a preposição de: (?:de\s+)?
+Assim separamos em grupos e em grupos que não capturados pela Regex
+---------------------------------------------------------------------
+Expressões Gananciosas e Preguiçosas (Greedy and Lazy Regex)
+
+Exemplo: <h1 class="text-left">Expressões regulares</h1>
+<h1.+> - seleciona tudo até o final (ganancioso)
+<h1.+?> - seleciona tudo até o final (preguiçoso)
+---------------------------------------------------------------------
+Back Reference Expression
+
+Exemplo: <h2 class="text-left">Expressões regulares</h2>
+<(h1|h2).+?>
+<(h1|h2).+?>[\wõ\s]+<\/.+ (seleciona tudo até o final)
+<(h1|h2).+?>[\wõ\s]+<\/\1. (só seleciona se a referência final 1 for igual a uma das referências iniciais
