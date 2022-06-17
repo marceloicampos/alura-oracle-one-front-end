@@ -46,6 +46,15 @@
         <br />
         <br />
         <br />
+        <form>
+            <p>input com atributo pattern de regex</p>
+            <input pattern="[0-9]*" placeholder="somente números">
+            <input type="submit" value="Enviar dados">
+        </form>
+        <br />
+        <br />
+        <br />
+        <br />
         <div>
             <p>João Fulano, 123.456.789-00, 1 de Maio de 1993, (21) 3079-9987, Rua do Ouvidor,50, 20040-030, Rio de Janeiro</p>
             <p>Maria Fulana, 98765432100, 11 de Março de 1995, (11) 933339871, Rua Vergueiro,3185, 04101-300, São Paulo</p>
@@ -99,7 +108,6 @@
             <p>Exemplo de placa: KMG-8089</p>
             <p>[A-Z]{3}-\d{4}</p>
             <hr />
-
             <p>Âncoras</p>
             <br />
             <p>Uma âncora não casa caracteres como as classes fazem, e nem definem quantidades.</p>
@@ -155,5 +163,18 @@
             <p>&lt;(h1|h2).+?&gt;[\wõ\s]+&lt;\/\1. (só seleciona se a referência final 1 for igual a uma das referências iniciais</p>
         </div>
         <script src="js/regex.js"></script>
+        <script>
+            var alvo = '11a22b33c'
+            var exp = /\d\d\w/g
+            var resultado = 0
+            while ((resultado = exp.exec(alvo))) {
+                console.log(resultado)
+            }
+            encontre = alvo.match(exp)
+            console.log(encontre)
+            console.log(encontre[0])
+            console.log(encontre[1])
+            console.log(encontre[2])
+        </script>
     </body>
 </html>
