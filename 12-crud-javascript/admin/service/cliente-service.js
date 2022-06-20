@@ -3,7 +3,10 @@
 // COM FUNÇÃO ASSÍNCRONA
 const listaClientes = async () => {
     const response = await fetch(`http://localhost:3000/profile`)
-    return await response.json()
+    if (response.ok) {
+        return await response.json()
+    }
+    throw new Error('não possível listar os clientes')
 }
 
 // COM FUNÇÃO ASSÍNCRONA
@@ -18,13 +21,19 @@ const criaCliente = async (nome, email) => {
             email: email
         })
     })
-    return response.body
+    if (response.ok) {
+        return response.body
+    }
+    throw new Error('não possível criar cliente')
 }
 
 // COM FUNÇÃO ASSÍNCRONA
 const detalhaCliente = async id => {
     const response = await fetch(`http://localhost:3000/profile/${id}`)
-    return await response.json()
+    if (response.ok) {
+        return await response.json()
+    }
+    throw new Error('não possível detalhar cliente')
 }
 
 // COM FUNÇÃO ASSÍNCRONA
@@ -39,7 +48,10 @@ const editaCliente = async (id, nome, email) => {
             email: email
         })
     })
-    return await response.json()
+    if (response.ok) {
+        return await response.json()
+    }
+    throw new Error('não possível editar cliente')
 }
 
 // COM FUNÇÃO ASSÍNCRONA
@@ -47,6 +59,9 @@ const removeCLiente = async id => {
     const response = await fetch(`http://localhost:3000/profile/${id}`, {
         method: 'DELETE'
     })
+    if (!response.ok) {
+        throw new Error('não possível remover cliente')
+    }
     return response
 }
 
