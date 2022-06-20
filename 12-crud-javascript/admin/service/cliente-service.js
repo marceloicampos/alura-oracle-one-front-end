@@ -6,9 +6,45 @@ const listaClientes = async () => {
     return await response.json()
 }
 
-export const clienteService = {
-    listaClientes
+// COM FUNÇÃO ASSÍNCRONA
+const criaCliente = async (nome, email) => {
+    const response = await fetch(`http://localhost:3000/profile`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            nome: nome,
+            email: email
+        })
+    })
+    return response.body
 }
+
+export const clienteService = {
+    listaClientes,
+    criaCliente
+}
+
+////////////////////////////////////////////////////////////////////////
+
+// COM FUNÇÃO SÍNCRONA
+// const criaCliente = (nome, email) => {
+//     return fetch(`http://localhost:3000/profile`, {
+//         method: 'POST',
+//         headers: {
+//             'Content-Type': 'application/json'
+//         },
+//         body: JSON.stringify({
+//             nome: nome,
+//             email: email
+//         })
+//     }).then(response => {
+//         return response.body
+//     })
+// }
+
+////////////////////////////////////////////////////////////////////////
 
 // COM FUNÇÃO SÍNCRONA
 // const listaClientes = () => {
@@ -34,3 +70,5 @@ export const clienteService = {
 //     // console.log(promise)
 //     return promise
 // }
+
+////////////////////////////////////////////////////////////////////////
