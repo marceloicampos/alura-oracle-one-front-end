@@ -21,28 +21,19 @@ const criaCliente = async (nome, email) => {
     return response.body
 }
 
-export const clienteService = {
-    listaClientes,
-    criaCliente
+// COM FUNÇÃO ASSÍNCRONA
+const removeCLiente = async id => {
+    const response = await fetch(`http://localhost:3000/profile/${id}`, {
+        method: 'DELETE'
+    })
+    return response
 }
 
-////////////////////////////////////////////////////////////////////////
-
-// COM FUNÇÃO SÍNCRONA
-// const criaCliente = (nome, email) => {
-//     return fetch(`http://localhost:3000/profile`, {
-//         method: 'POST',
-//         headers: {
-//             'Content-Type': 'application/json'
-//         },
-//         body: JSON.stringify({
-//             nome: nome,
-//             email: email
-//         })
-//     }).then(response => {
-//         return response.body
-//     })
-// }
+export const clienteService = {
+    listaClientes,
+    criaCliente,
+    removeCLiente
+}
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -72,3 +63,28 @@ export const clienteService = {
 // }
 
 ////////////////////////////////////////////////////////////////////////
+
+// COM FUNÇÃO SÍNCRONA
+// const criaCliente = (nome, email) => {
+//     return fetch(`http://localhost:3000/profile`, {
+//         method: 'POST',
+//         headers: {
+//             'Content-Type': 'application/json'
+//         },
+//         body: JSON.stringify({
+//             nome: nome,
+//             email: email
+//         })
+//     }).then(response => {
+//         return response.body
+//     })
+// }
+
+////////////////////////////////////////////////////////////////////////
+
+// COM FUNÇÃO SÍNCRONA
+// const removeCLiente = id => {
+//     return fetch(`http://localhost:3000/profile/${id}`, {
+//         method: 'DELETE'
+//     })
+// }
