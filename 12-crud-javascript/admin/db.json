@@ -19,6 +19,16 @@
       "nome": "Caio Marcelo",
       "email": "caio.marcelo@alura.com.br",
       "id": 4
+    },
+    {
+      "nome": "Cristiane Campos",
+      "email": "cristiane@alura.com.br",
+      "id": 5
+    },
+    {
+      "nome": "Bruno",
+      "email": "bruno@alura.com.br",
+      "id": 6
     }
   ]
 }
