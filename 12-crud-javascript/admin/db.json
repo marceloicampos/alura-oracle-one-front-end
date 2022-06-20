@@ -1,19 +1,24 @@
 {
   "profile": [
     {
-      "nome": "felipe",
+      "nome": "Felipe",
       "email": "felipe@alura.com",
       "id": 1
     },
     {
-      "nome": "marcelo",
+      "nome": "Marcelo",
       "email": "marcelo@alura.com",
       "id": 2
     },
     {
-      "nome": "duda",
-      "email": "duda@alura.com.br",
+      "nome": "Maria Eduarda",
+      "email": "maria.eduarda@alura.com.br",
       "id": 3
+    },
+    {
+      "nome": "Caio Marcelo",
+      "email": "caio.marcelo@alura.com.br",
+      "id": 4
     }
   ]
 }

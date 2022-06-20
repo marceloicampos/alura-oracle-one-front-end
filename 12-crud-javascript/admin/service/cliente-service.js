@@ -22,6 +22,27 @@ const criaCliente = async (nome, email) => {
 }
 
 // COM FUNÇÃO ASSÍNCRONA
+const detalhaCliente = async id => {
+    const response = await fetch(`http://localhost:3000/profile/${id}`)
+    return await response.json()
+}
+
+// COM FUNÇÃO ASSÍNCRONA
+const editaCliente = async (id, nome, email) => {
+    const response = await fetch(`http://localhost:3000/profile/${id}`, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            nome: nome,
+            email: email
+        })
+    })
+    return await response.json()
+}
+
+// COM FUNÇÃO ASSÍNCRONA
 const removeCLiente = async id => {
     const response = await fetch(`http://localhost:3000/profile/${id}`, {
         method: 'DELETE'
@@ -32,6 +53,8 @@ const removeCLiente = async id => {
 export const clienteService = {
     listaClientes,
     criaCliente,
+    detalhaCliente,
+    editaCliente,
     removeCLiente
 }
 
@@ -77,6 +100,33 @@ export const clienteService = {
 //         })
 //     }).then(response => {
 //         return response.body
+//     })
+// }
+
+////////////////////////////////////////////////////////////////////////
+
+// COM FUNÇÃO SÍNCRONA
+// const detalhaCliente = id => {
+//     return fetch(`http://localhost:3000/profile/${id}`).then(response => {
+//         return response.json()
+//     })
+// }
+
+////////////////////////////////////////////////////////////////////////
+
+// COM FUNÇÃO SÍNCRONA
+// const editaCliente = (id, nome, email) => {
+//     return fetch(`http://localhost:3000/profile/${id}`, {
+//         method: 'PUT',
+//         headers: {
+//             'Content-Type': 'application/json'
+//         },
+//         body: JSON.stringify({
+//             nome: nome,
+//             email: email
+//         })
+//     }).then(response => {
+//         return response.json()
 //     })
 // }
 
