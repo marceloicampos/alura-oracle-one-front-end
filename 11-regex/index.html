@@ -48,8 +48,8 @@
         <br />
         <form>
             <p>input com atributo pattern de regex</p>
-            <input pattern="[0-9]*" placeholder="somente números">
-            <input type="submit" value="Enviar dados">
+            <input pattern="[0-9]*" placeholder="somente números" />
+            <input type="submit" value="Enviar dados" />
         </form>
         <br />
         <br />
@@ -141,7 +141,33 @@
             <p>https://marceloicampos.github.io/alura-oracle-one-front-end/11-regex/index.html - RETORNO</p>
             <p>^https.+\.html$ (NO INÍCIO https e NO FINAL .html)</p>
             <hr />
-            <p>Non-capturing groups!</p>
+            <p>GROUPS and Non-capturing groups!</p>
+            <br />
+            <p>
+                ?: Grupo não capturado: indica um grupo que não constará na lista de grupos capturados... note que isso vai ser considerado normalmente dentro
+                do match, só não será um grupo.
+            </p>
+            <p>
+                ?= Lookahead positivo: isso é uma assertiva, que verifica se o grupo pode ser encontrado iniciando-se na posição que se encontra, mas sem
+                capturar nem avançar na leitura da string que está sendo analisada.
+            </p>
+            <p>
+                ?! Lookahead negativo: isso é uma assertiva, que verifica se o grupo não pode ser encontrado iniciando-se na posição que se encontra, mas sem
+                capturar nem avançar na leitura da string que está sendo analisada.
+            </p>
+            <p>
+                ?&lt;= Lookbehind positivo: isso é uma assertiva, que verifica se o grupo pode ser encontrado terminando-se na posição que se encontra, mas sem
+                capturar nem avançar na leitura da string que está sendo analisada.
+            </p>
+            <p>
+                ?&lt;! Lookbehind negativo: isso é uma assertiva, que verifica se o grupo não pode ser encontrado terminando-se na posição que se encontra, mas
+                sem capturar nem avançar na leitura da string que está sendo analisada.
+            </p>
+            <br />
+            <p>Exemplo de REGEX para validação de EMAIL:</p>
+            <p>^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$</p>
+            <p>Exemplo de REGEX para validação de SENHA:</p>
+            <p>^(?=.*\d)(?=.*[a-zç])(?=.*[A-ZÇ]).{6,8}$</p>
             <br />
             <p>Exemplo: João Fulano, 123.456.789-00, 1 de Maio de 1993, (21) 3079-9987, Rua do Ouvidor,50, 20040-030, Rio de Janeiro</p>
             <p>(\d?\d)\s+(?:de\s+)?([A-Z][a-zç]{3,8})\s+(?:de\s+)?(\d{4})</p>
