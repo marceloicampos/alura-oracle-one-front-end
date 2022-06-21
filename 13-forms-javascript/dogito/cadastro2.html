@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,17 +34,36 @@
                     <fieldset>
                         <legend class="formulario__legenda">Informações básicas</legend>
                         <div class="input-container">
-                            <input name="nome" id="nome" class="input" type="text" placeholder="Nome" />
+                            <input name="nome" id="nome" class="input" type="text" placeholder="Nome" required />
                             <label class="input-label" for="nome">Nome</label>
                             <span class="input-mensagem-erro">Este campo não está válido</span>
                         </div>
                         <div class="input-container">
-                            <input name="email" id="email" class="input" type="text" placeholder="Email" />
+                            <input
+                                name="email"
+                                id="email"
+                                class="input"
+                                type="email"
+                                placeholder="Email"
+                                pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                required
+                            />
+                            <!-- type="email" that must be in the following order: characters@characters.domain (characters followed by an @ sign, followed by more characters, and then a "." -->
                             <label class="input-label" for="email">Email</label>
                             <span class="input-mensagem-erro">Este campo não está válido</span>
                         </div>
                         <div class="input-container">
-                            <input name="senha" id="senha" class="input" type="text" placeholder="Senha" />
+                            <input
+                                name="senha"
+                                id="senha"
+                                class="input"
+                                type="password"
+                                placeholder="Senha"
+                                pattern="^(?=.*\d)(?=.*[a-zç])(?=.*[A-ZÇ]).{6,8}$"
+                                title="A senha deve conter pelo menos 1 número, 1 letra minúscula e 1 letra maiúscula e deve ter entre 6 a 8 caracteres"
+                                required
+                            />
+                            <!-- type="password" must contain at least one number, one uppercase and lowercase letter, must contain min 6 and max 8 characters -->
                             <label class="input-label" for="senha">Senha</label>
                             <span class="input-mensagem-erro">Este campo não está válido</span>
                         </div>
