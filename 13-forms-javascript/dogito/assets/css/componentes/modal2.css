@@ -30,7 +30,7 @@
     font-size: var(--fonte-tamanho-modal-botao);
 }
 
-.modal__texto { 
+.modal__texto {
     margin-bottom: 3.875rem;
 }
 
@@ -54,5 +54,5 @@
 
 .modal--fechado {
     left: -100vw;
-    transition: .25s;
+    transition: 0.25s;
 }

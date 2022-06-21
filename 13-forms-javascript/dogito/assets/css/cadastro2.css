@@ -17,7 +17,7 @@
     margin-bottom: 1rem;
 }
 
-@media(min-width: 800px) {
+@media (min-width: 800px) {
     .cadastro-cabecalho__logo {
         width: 5.75rem;
         margin-bottom: 1rem;

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Doguito Petshop | Cadastro de produto</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/css/base/base2.css" />
+        <link rel="stylesheet" href="./assets/css/componentes/cabecalho2.css" />
+        <link rel="stylesheet" href="./assets/css/componentes/cartao2.css" />
+        <link rel="stylesheet" href="./assets/css/cadastra_cliente2.css" />
+        <link rel="stylesheet" href="./assets/css/componentes/inputs2.css" />
+        <link rel="stylesheet" href="./assets/css/componentes/botao2.css" />
+        <link rel="stylesheet" href="./assets/css/cadastro_produto2.css" />
+    </head>
+    <body>
+        <header class="cabecalho container">
+            <img src="./assets/img/doguitoadm2.svg" alt="Logo Doguito" class="cabecalho__logo" />
+            <nav>
+                <ul class="cabecalho__lista-navegacao">
+                    <li class="cabecalho__link"><a href="#">Dashboard</a></li>
+                    <li class="cabecalho__link"><a href="#">Produtos</a></li>
+                    <li class="cabecalho__link"><a href="#">Clientes </a></li>
+                    <li class="cabecalho__link"><a href="#">Pets</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container flex flex--centro flex--coluna">
+            <section class="cartao cadastro">
+                <h1 class="cartao__titulo">Cadastrar um produto</h1>
+                <p><a class="link" href="./cadastro2.html">Voltar</a></p>
+                <br />
+                <form action="./cadastro_produto_concluido2.html" class="flex flex--coluna">
+                    <div class="input-container">
+                        <input name="nome" id="nome" class="input" type="text" placeholder="Nome" />
+                        <label class="input-label" for="nome">Nome</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container cadastro__preco-container">
+                        <input name="preco" id="preco" class="input" type="text" placeholder="Preço" />
+                        <label class="input-label" for="preco">Preço</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container cadastro__descricao-container">
+                        <input class="input" name="descricao" id="descricao" placeholder="Descrição" />
+                        <label class="input-label" for="descricao">Descrição</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <button class="botao">Cadastrar produto</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
