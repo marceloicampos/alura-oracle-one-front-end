@@ -34,20 +34,13 @@
                     <fieldset>
                         <legend class="formulario__legenda">Informações básicas</legend>
                         <div class="input-container">
-                            <input name="nome" id="nome" class="input" type="text" placeholder="Nome" required />
+                            <input name="nome" id="nome" class="input" type="text" placeholder="Nome" data-tipo="nome" required />
                             <label class="input-label" for="nome">Nome</label>
                             <span class="input-mensagem-erro">Este campo não está válido</span>
                         </div>
                         <div class="input-container">
-                            <input
-                                name="email"
-                                id="email"
-                                class="input"
-                                type="email"
-                                placeholder="Email"
-                                pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                                required
-                            />
+                            <input name="email" id="email" class="input" type="email" placeholder="Email" data-tipo="email" required />
+                            <!-- pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" -->
                             <!-- type="email" that must be in the following order: characters@characters.domain (characters followed by an @ sign, followed by more characters, and then a "." -->
                             <label class="input-label" for="email">Email</label>
                             <span class="input-mensagem-erro">Este campo não está válido</span>
@@ -61,6 +54,7 @@
                                 placeholder="Senha"
                                 pattern="^(?=.*\d)(?=.*[a-zç])(?=.*[A-ZÇ]).{6,8}$"
                                 title="A senha deve conter pelo menos 1 número, 1 letra minúscula e 1 letra maiúscula e deve ter entre 6 a 8 caracteres"
+                                data-tipo="senha"
                                 required
                             />
                             <!-- type="password" must contain at least one number, one uppercase and lowercase letter, must contain min 6 and max 8 characters -->
@@ -77,8 +71,8 @@
                                 class="input"
                                 type="date"
                                 placeholder="Data de nascimento"
-                                required
                                 data-tipo="dataNascimento"
+                                required
                             />
                             <label class="input-label" for="nascimento">Data de nascimento</label>
                             <span class="input-mensagem-erro">Este campo não está válido</span>
