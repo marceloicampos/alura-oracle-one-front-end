@@ -37,8 +37,12 @@ const mensagemDeErros = {
         customError: 'Você deve ser maior de 18 anos para efetuar cadastro'
     },
     cpf: {
-        valueMissing: 'O Campo Data não pode estar vazio',
+        valueMissing: 'O Campo CPF não pode estar vazio',
         customError: 'CPF digitado não é valido'
+    },
+    cep: {
+        valueMissing: 'O Campo CEP não pode estar vazio',
+        patternMismatch: 'CEP digitado não é valido'
     }
 }
 
@@ -109,7 +113,7 @@ function cpfRepetido(cpf) {
             cpfValido = false
         }
     })
-    console.log(cpf.length);
+    console.log(cpf.length)
 
     return cpfValido
 }
